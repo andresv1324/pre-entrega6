@@ -24,7 +24,6 @@ img{
 
 body {
     overflow-x: hidden;
-    width: 100%;
     font-family: "Inter", sans-serif;
     font-weight: 400;
     background-color: #0B1020;
@@ -43,32 +42,31 @@ article {
 }
 
 /* TiTULOS */
-h1 {
+h1, h2, h3 {
     font-family: "Poppins", sans-serif;
+}
+
+h1 {
     font-weight: 600;
     font-size: 2rem;
 }
 
 h2 {
-    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 1.5rem;
 }
 
 h3 {
-    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 1.25rem;
 }
 
 p {
-    font-family: "Inter", sans-serif;
     font-weight: 300;
     font-size: 1rem;
 }
 
 figcaption {
-    font-family: "Inter", sans-serif;
     font-weight: 200;
 }
 
@@ -151,7 +149,6 @@ header nav a{
 header nav ul{
     list-style: none;
     display: flex;
-    flex-direction: row;
     gap: 1rem;
 }
 /* ==================================================== */
@@ -160,7 +157,6 @@ header nav ul{
 footer{
     padding: 1rem;
     display: flex;
-    flex-direction: row;
     background-color: #0B1020;
     justify-content: space-between;
     align-items: center;
@@ -168,12 +164,10 @@ footer{
 
 footer section{
     background-color: #0B1020;
-    align-items: center;
 }
 
 footer .redes{
     display: flex;
-    flex-direction: row;
 }
 
 footer section nav{
@@ -278,15 +272,6 @@ iframe{
     display: none;
 }
 
-.indexBioInicio {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "indexT"
-        "indexB1"
-        "indexB2";
-    gap: 1rem;
-}
 
 /* ==================================================== */
 /* Estilos Para Galeria */
@@ -350,7 +335,6 @@ iframe{
 
     /* ETIQUETADO y ESTILOS*/
     .bloqueTituloContacto{
-        align-items: center;
         grid-area: bloqTitCon;
     }
 
@@ -365,11 +349,6 @@ iframe{
         display: flex;
         flex-direction: column;
         grid-area: bloqForCot;
-    }
-
-    .bloqueFormContacto h2, .bloqueFormContacto p{
-        display: flex;
-        align-items: center;
     }
 
     .bloqueFormContacto form{
@@ -425,7 +404,6 @@ iframe{
 /* ==================================================== */
 /* Estilos Para Galeria */
     .bloqueFotografia{
-        width: 100%;
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: 1fr 5fr;
@@ -503,11 +481,6 @@ iframe{
         align-self: center;
     }
 
-    .listaGiras{
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
 
     .listaGiras article{
         display: grid;
@@ -520,9 +493,6 @@ iframe{
             "girasZ .      .";
     }
 
-    iframe{
-        display:none;
-    }
 
 
 /* ESTILOS INDEX */
@@ -578,10 +548,6 @@ iframe{
     }
 
     /* ETIQUETADO y ESTILOS*/
-    .BloqueInformacionContacto{
-        display: block;
-        grid-area: bloqInfCon;
-    }
 
     .bloqueCorreoContacto,.BloqueInformacionContacto{
         width: 50%;
@@ -629,7 +595,6 @@ iframe{
     }
 
     .bloqueFotografia{
-        width: 100%;
         display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: 1fr 5fr;
@@ -756,18 +721,6 @@ iframe{
     }
 
 /* ESTILOS ALBUM */
-        /* Etiquetado Zonas */
-    .girasFecha{
-        grid-area: girasF;
-    }
-    .girasPais{
-        grid-area: girasP;    }
-    .girasZona{
-        grid-area: girasZ;
-    }
-    .girasCompra{
-        grid-area: girasC;
-    }
     .girasMap{
         grid-area: girasM;
     }
