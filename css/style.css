@@ -347,7 +347,7 @@ iframe{
             "bloqCorCon"
             "bloqForCot";
     }
-    
+
     /* ETIQUETADO y ESTILOS*/
     .bloqueTituloContacto{
         align-items: center;
@@ -397,10 +397,31 @@ iframe{
         display: block;
         margin: 1rem auto;
     }
+    .BloqueInformacionContacto{
+        display: none;
+    }
 /* ==================================================== */
 
 
 @media (min-width: 768px){
+/* ==================================================== */
+/* Estilos Para Contacto */
+    .mainContacto{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1.5fr 5fr;
+        grid-template-areas: 
+            "bloqTitCon bloqTitCon"
+            "bloqCorCon  bloqForCot"
+            "bloqInfCon bloqForCot";
+    }
+
+    /* ETIQUETADO y ESTILOS*/
+    .BloqueInformacionContacto{
+        display: block;
+        grid-area: bloqInfCon;
+    }
+/* ==================================================== */
+
 /* ==================================================== */
 /* Estilos Para Galeria */
     .bloqueFotografia{
