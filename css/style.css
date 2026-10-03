@@ -565,6 +565,33 @@ iframe{
 
 
 @media (min-width: 1024px){
+/* ==================================================== */
+/* Estilos Para Contacto */
+    .mainContacto{
+        background-color: #172554;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 1fr 1.5fr 5fr;
+        grid-template-areas: 
+            "bloqTitCon bloqTitCon bloqTitCon bloqTitCon"
+            "bloqCorCon bloqCorCon bloqForCot bloqForCot"
+            "bloqInfCon bloqInfCon bloqForCot bloqForCot ";
+    }
+
+    /* ETIQUETADO y ESTILOS*/
+    .BloqueInformacionContacto{
+        display: block;
+        grid-area: bloqInfCon;
+    }
+
+    .bloqueCorreoContacto,.BloqueInformacionContacto{
+        width: 50%;
+        justify-self: center;
+    }
+
+    .bloqueFormContacto{
+        width: 70%;
+    }
+/* ==================================================== */
 
 /* ==================================================== */
 /* Estilos Para Galeria */
