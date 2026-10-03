@@ -336,6 +336,70 @@ iframe{
 /* ==================================================== */
 
 
+/* ==================================================== */
+/* Estilos Para Contacto */
+    .mainContacto{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1.5fr 5fr;
+        grid-template-areas: 
+            "bloqTitCon"
+            "bloqCorCon"
+            "bloqForCot";
+    }
+    /* ETIQUETADO y ESTILOS*/
+    .bloqueTituloContacto{
+        align-items: center;
+        grid-area: bloqTitCon;
+    }
+    .bloqueCorreoContacto{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        grid-area: bloqCorCon;
+    }
+
+    .bloqueFormContacto{
+        display: flex;
+        flex-direction: column;
+        
+        grid-area: bloqForCot;
+    }
+
+    .bloqueFormContacto h2, .bloqueFormContacto p{
+        display: flex;
+        align-items: center;
+    }
+
+    .bloqueFormContacto form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bloqueFormContacto form label{
+        padding-top: 1.5rem;
+    }
+
+    .bloqueFormContacto form textarea{
+        width: 100%;
+        height: 8rem;
+        resize: none;
+    }
+
+    .bloqueFormContacto form button{
+    background-color: #1E3A5F;
+    border: 1px solid #00D9FF;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #00D9FF;
+    width: 30%;
+    display: block;
+    margin: 1rem auto;
+    }
+
+/* ==================================================== */
+
+
 @media (min-width: 768px){
 /* ==================================================== */
 /* Estilos Para Galeria */
